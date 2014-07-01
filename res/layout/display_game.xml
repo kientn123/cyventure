@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayClues" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startDate_b"
+        android:layout_centerHorizontal="true"
+        android:text="C/I"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leave"
+        android:layout_alignLeft="@+id/leave"
+        android:minHeight="60dp"
+        
+        android:background="#a71930"
+        android:textColor = "#FFF"
+        android:text="Hint" />
+
+    <Button
+        android:id="@+id/startDate_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hint"
+        android:layout_centerHorizontal="true"
+        android:minHeight="60dp"
+        android:background="#c31633"
+        android:textColor = "#FFF"
+        android:text="Check in" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="28dp"
+        android:text="Loading..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startDate_b"
+        android:layout_alignRight="@+id/startDate_b"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="47dp"
+        android:text="Hint:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#822435"
+        android:minHeight="60dp"
+        android:text="Back"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

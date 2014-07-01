@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/details_show_game_we_created"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/game_name_show_game_we_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textSize="27sp"
+                    android:text="Name: ..."
+                    />
+                
+                <TextView 
+                    android:id="@+id/admin_show_game_we_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="27sp"
+                    android:text="Admin: ..."/>
+                
+                <TextView 
+                    android:id="@+id/notes_show_game_we_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="27sp"
+                    android:text="Notes: ..."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/players_show_game_we_created"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/invite_friends_show_game_we_created"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="InviteFriends" />
+                    <Button 
+                        android:id="@+id/cancel_show_game_we_created"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"/>
+                        
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_players_show_game_we_created"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

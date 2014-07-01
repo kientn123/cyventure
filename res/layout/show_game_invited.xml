@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/details_show_game_invited"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/game_name_show_game_invited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textSize="27sp"
+                    android:text="Name: ..."/>
+                
+                <TextView 
+                    android:id="@+id/admin_show_game_invited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="27sp"
+                    android:text="Admin: ..."/>
+
+                <TextView
+                    android:id="@+id/clues_show_game_invited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="27sp"
+                    android:text="Clues: ..." />
+
+                <TextView
+                    android:id="@+id/notes_show_game_invited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textSize="27sp"
+                    android:text="Notes: ..."/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/accept_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A71930"
+                        android:text="Accept"
+                        android:textColor="#FFF" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/deny_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#822434"
+                    android:text="Deny"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/cancel_show_game_invited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FDCA2F"
+                    android:text="@string/cancel_button"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/players_show_game_invited"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/list_players_show_game_invited"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

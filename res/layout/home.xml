@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+   <ImageView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/button3"
+       android:adjustViewBounds="true"
+       android:gravity="center_horizontal"
+       android:src="@drawable/cyventure_circle" >
+ 
+	</ImageView>
+
+    <Button
+        android:id="@+id/mapShow"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#822435"
+        android:textColor="#FFF"
+        android:text="Show Map" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/mapShow"
+        android:layout_alignParentLeft="true"
+        android:background="#8a182b"
+        android:textColor = "#FFF"
+        android:text="@string/create_game" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:background="#a71930"
+        android:textColor = "#FFF"
+        android:text="@string/join_game" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:background="#c31633"
+        android:textColor = "#FFF"
+        android:text="@string/view_game" />
+
+</RelativeLayout>
